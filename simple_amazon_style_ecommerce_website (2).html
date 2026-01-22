@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEasy – Online Store</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#eaeded; }
+    header { background:#131921; color:white; padding:15px 20px; display:flex; align-items:center; justify-content:space-between; }
+    header h1 { margin:0; font-size:22px; }
+    header input { width:50%; padding:8px; border-radius:4px; border:none; }
+    .container { padding:20px; }
+    .products { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+    .card { background:white; padding:15px; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.15); display:flex; flex-direction:column; }
+    .caption { font-weight:bold; margin-bottom:8px; }
+    .image { background:#f3f3f3; height:180px; display:flex; align-items:center; justify-content:center; color:#777; margin-bottom:10px; border-radius:4px; }
+    .price { color:#B12704; font-size:20px; font-weight:bold; margin:8px 0; }
+    .info { font-size:13px; color:#555; margin-bottom:10px; }
+    .description { font-size:14px; color:#333; flex-grow:1; }
+    .card button { margin-top:12px; background:#f0c14b; border:1px solid #a88734; padding:10px; cursor:pointer; border-radius:4px; font-weight:bold; }
+    .card button:hover { background:#ddb347; }
+    footer { background:#131921; color:white; text-align:center; padding:15px; margin-top:30px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ShopEasy</h1>
+  <input type="text" placeholder="Search products" />
+</header>
+
+<div class="container">
+  <div class="products">
+
+    <!-- Product 1 -->
+    <div class="card">
+      <div class="caption">Nourish your roots. Strengthen every strand.</div>
+      <div class="image">Photo of Product</div>
+      <div class="price">₹499</div>
+      <button>Buy Now</button>
+      <div class="info">✔ 7 Days Replacement<br>✔ Delivered in 3 Days</div>
+      <div class="description">
+        Biloba Naturals Hair Oil is a herbal blend designed to reduce hair fall and promote stronger, healthier hair. It nourishes the scalp, strengthens roots, improves blood circulation, and adds natural shine without feeling greasy. Suitable for all hair types.
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="card">
+      <div class="caption">Capture every moment in stunning detail</div>
+      <div class="image">Photo of Product</div>
+      <div class="price">₹7,999</div>
+      <button>Buy Now</button>
+      <div class="info">✔ 7 Days Replacement<br>✔ Delivered in 3 Days</div>
+      <div class="description">
+        64MP digital camera with powerful 40X optical zoom for crystal-clear photos and videos. Perfect for travel, vlogging, events, and everyday photography. Comes with 64GB memory card, USB cable, charger, and camera pouch.
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="card">
+      <div class="caption">Stable shots. Perfect angles. Every time.</div>
+      <div class="image">Photo of Product</div>
+      <div class="price">₹1,499</div>
+      <button>Buy Now</button>
+      <div class="info">✔ 7 Days Replacement<br>✔ Delivered in 3 Days</div>
+      <div class="description">
+        Heavy-duty adjustable tripod with strong non-slip legs and a 360° rotating head. Includes wireless remote for hands-free photos and videos. Ideal for photography, vlogging, live streaming, and online meetings.
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="card">
+      <div class="caption">Fun, color, and smiles in one bundle</div>
+      <div class="image">Photo of Product</div>
+      <div class="price">₹999</div>
+      <button>Buy Now</button>
+      <div class="info">✔ 7 Days Replacement<br>✔ Delivered in 3 Days</div>
+      <div class="description">
+        Kids toy collection set made from safe, child-friendly materials. Encourages creativity, imagination, and motor skill development. Perfect for indoor and outdoor play and an ideal gift for children.
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="card">
+      <div class="caption">20 vehicles. Endless fun.</div>
+      <div class="image">Photo of Product</div>
+      <div class="price">₹1,299</div>
+      <button>Buy Now</button>
+      <div class="info">✔ 7 Days Replacement<br>✔ Delivered in 3 Days</div>
+      <div class="description">
+        20-pack toy vehicle set including cars, trucks, buses, police and emergency vehicles. Bright colors and realistic design encourage imaginative role-play. Made from durable, child-safe materials.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 ShopEasy. All rights reserved.
+</footer>
+
+</body>
+</html>
