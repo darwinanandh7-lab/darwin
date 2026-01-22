@@ -13,7 +13,14 @@
     .products { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
     .card { background:white; padding:15px; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.15); display:flex; flex-direction:column; }
     .caption { font-weight:bold; margin-bottom:8px; }
-    .image { background:#f3f3f3; height:180px; display:flex; align-items:center; justify-content:center; color:#777; margin-bottom:10px; border-radius:4px; }
+    .image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #f3f3f3;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
     .price { color:#B12704; font-size:20px; font-weight:bold; margin:8px 0; }
     .info { font-size:13px; color:#555; margin-bottom:10px; }
     .description { font-size:14px; color:#333; flex-grow:1; }
@@ -35,7 +42,7 @@
     <!-- Product 1 -->
     <div class="card">
       <div class="caption">Nourish your roots. Strengthen every strand.</div>
-      <div class="image">Photo of Product</div>
+      <img src="hair-oil.jpg" class="image" alt="Hair Oil">
       <div class="price">₹499</div>
       <button>Buy Now</button>
       <div class="info">✔ 7 Days Replacement<br>✔ Delivered in 3 Days</div>
